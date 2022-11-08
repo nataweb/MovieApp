@@ -11,7 +11,7 @@ namespace MovieApp.API.Repositories
         {
             this.movieDbContext = movieDbContext;
         }
-        public IEnumerable<Movie> GetAll()
+        public IEnumerable<Movies> GetAll()
         {
            return movieDbContext.Movies.ToList();
         }

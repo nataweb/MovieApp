@@ -11,12 +11,12 @@ namespace MovieApp.API.Data
                 
         }
       
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movies> Movies { get; set; }
 
         public DbSet<Genre> Genres { get; set; }
-        public DbSet<Movie> CollectionInfo { get; set; }
-        public DbSet<ProductionCompany> ProductionCompanies { get; set; }
-        public DbSet<ProductionCountry> ProductionCountries { get; set; }
-        public DbSet<SpokenLanguage> SpokenLanguages { get; set; }
+        public DbSet<Movies> CollectionInfo { get; set; }
+        public DbSet<ProductionCompanies> ProductionCompanies { get; set; }
+        public DbSet<ProductionCountries> ProductionCountries { get; set; }
+        public DbSet<SpokenLanguages> SpokenLanguages { get; set; }
     }
 }

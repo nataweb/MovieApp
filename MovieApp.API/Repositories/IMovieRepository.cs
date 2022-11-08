@@ -4,6 +4,6 @@ namespace MovieApp.API.Repositories
 {
     public interface IMovieRepository
     {
-        IEnumerable<Movie> GetAll();
+        IEnumerable<Movies> GetAll();
     }
 }
