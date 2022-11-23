@@ -1,11 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace MovieApp.API.Models.Domain
+﻿namespace MovieApp.API.Models.DTO
 {
-    public class Movies
+    public class AddMovieRequest
     {
-        public int Id { get; set; }
-
         public string? Title { get; set; }
 
         public string? BackdropPath { get; set; }
@@ -35,14 +31,5 @@ namespace MovieApp.API.Models.Domain
         public string? Status { get; set; }
 
         public string? Tagline { get; set; }
-
-        //foreign key
-
-        //[ForeignKey("Genre")]
-        //public int GenreId { get; set; }
-
-        //public Genre Genre { get; set; }
-
-
     }
 }

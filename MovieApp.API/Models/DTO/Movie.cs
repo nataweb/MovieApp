@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace MovieApp.API.Models.Domain
+﻿namespace MovieApp.API.Models.DTO
 {
-    public class Movies
+    public class Movie
     {
         public int Id { get; set; }
 
@@ -36,13 +34,16 @@ namespace MovieApp.API.Models.Domain
 
         public string? Tagline { get; set; }
 
-        //foreign key
+        //Navigation properties
 
-        //[ForeignKey("Genre")]
-        //public int GenreId { get; set; }
+        //public List<Collection> MovieCollectionInfo { get; set; }
 
-        //public Genre Genre { get; set; }
+        //public List<Genre> Genres { get; set; }
 
+        //public List<ProductionCompanies>? ProductionCompanies { get; set; }
 
+        //public List<ProductionCountries>? ProductionCountries { get; set; }
+
+        //public List<SpokenLanguages>? SpokenLanguages { get; set; }
     }
 }

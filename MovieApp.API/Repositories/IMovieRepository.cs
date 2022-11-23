@@ -4,6 +4,14 @@ namespace MovieApp.API.Repositories
 {
     public interface IMovieRepository
     {
-        IEnumerable<Movies> GetAll();
+        Task<IEnumerable<Movies>> GetAllAsync();
+
+        Task<Movies> GetAsync(int Id);
+
+        Task<Movies> AddAsync(Movies movie);
+
+        Task<Movies> DeleteAsync(int Id);
+
+        Task<Movies> UpdateAsync(int Id,Movies movie);
     }
 }

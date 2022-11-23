@@ -1,13 +1,14 @@
 ﻿namespace MovieApp.API.Models.Domain
 {
-    public class ProductionCountries
+    public class Genre
     {
         public int Id { get; set; }
 
-        public string? Iso_3166_1 { get; set; }
-
         public string? Name { get; set; }
 
-        public int? MoviesId { get; set; }
+        public int? MovieId { get; set; }
+        public Movies Movie { get; set; }
+
+
     }
 }

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/MovieAppAPIapi/apis/MovieAppAPI",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/appmovie/databases/appfilm.azurewebsites.net",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:MovieAppConnection",
+      "dynamicId": null
+    }
+  }
+}
